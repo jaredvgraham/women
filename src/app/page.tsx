@@ -7,6 +7,8 @@ export default function Home() {
           href="https://x.com/women_cto"
           className="text-lg md:text-2xl text-gray-200 px-4 py-2 hover:bg-gray-800 rounded-lg focus:ring focus:ring-gray-700"
           aria-label="Visit Women CTO on X"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           X
         </a>
@@ -14,6 +16,8 @@ export default function Home() {
           href="https://t.me/Womenctoportal"
           className="text-lg md:text-2xl text-gray-200 px-4 py-2 hover:bg-gray-800 rounded-lg focus:ring focus:ring-gray-700"
           aria-label="Visit Women CTO on Telegram"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           Telegram
         </a>
@@ -35,6 +39,8 @@ export default function Home() {
             href="https://dexscreener.com/solana/83bbu7kt3ywt5qfqmjtva8euff3pg2vgywfkueufkdb7"
             className=" md:text-xl lg:text-2xl text-gray-300 px-6 py-3 border border-gray-300 hover:bg-gray-950 rounded-lg hover:text-gray-200 focus:ring focus:ring-gray-700 w-40 mx-auto"
             aria-label="View Chart on Dexscreener"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             Chart
           </a>
