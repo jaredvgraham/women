@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Home() {
   return (
     <div className="bg-black min-h-screen flex flex-col">
@@ -25,12 +27,21 @@ export default function Home() {
 
       {/* Hero Section */}
       <div
-        className="flex flex-col items-center justify-center bg-cover bg-center text-center gap-4 px-4"
-        style={{
-          backgroundImage: "url(/wo.png)",
-          height: "90vh",
-        }}
+        className="relative flex flex-col items-center justify-center text-center gap-4 px-4"
+        style={{ height: "90vh" }}
       >
+        {/* Optimized Background Image */}
+        <Image
+          src="/wo.png"
+          alt="Background"
+          width={1920}
+          height={1080}
+          quality={100}
+          priority
+        />
+        <h1 className="text-4xl md:text-6xl lg:text-7xl text-gray-300 font-bold">
+          This will cook!
+        </h1>
         <div className="flex flex-col gap-2 bg-black bg-opacity-70 p-2 md:p-8 rounded-xl">
           <p className="text-xs md:text-2xl lg:text-3xl text-gray-300 px-4">
             CA: DPfEwwrcWvc63PobzdcDkDbkY5FgWn7zCxEkXGGHpump
@@ -48,12 +59,14 @@ export default function Home() {
       </div>
 
       {/* Footer */}
-      <footer className="mt-auto  text-gray-400 text-center py-4 text-sm border-t border-gray-700">
+      <footer className="mt-auto text-gray-400 text-center py-4 text-sm border-t border-gray-700">
         <p>
           Women will cook |{" "}
           <a
             href="https://x.com/women_cto"
             className="hover:text-gray-200 underline"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             Follow us on X
           </a>
