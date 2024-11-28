@@ -31,8 +31,8 @@ export default function Home() {
           height: "90vh",
         }}
       >
-        <div className="flex flex-col gap-2 bg-black bg-opacity-70 p-8 rounded-xl">
-          <p className="text-sm md:text-2xl lg:text-3xl text-gray-300 px-4">
+        <div className="flex flex-col gap-2 bg-black bg-opacity-70 p-2 md:p-8 rounded-xl">
+          <p className="text-xs md:text-2xl lg:text-3xl text-gray-300 px-4">
             CA: DPfEwwrcWvc63PobzdcDkDbkY5FgWn7zCxEkXGGHpump
           </p>
           <a
